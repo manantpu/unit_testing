@@ -1,8 +1,5 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
-import java.io.*;
-
+/*@author : Manasi Anantpurkar
+ */
 public class counturinals {
     public static int isinputstring(String s){
         for(int i=0;i<s.length();i++){
@@ -22,8 +19,8 @@ public class counturinals {
                         + temp.substring(i + 1);
             }
         }
+
         System.out.println(count);
-        CreateFile.addintofile(count);
         return count;
     }
 }
