@@ -15,6 +15,19 @@ public class OpenFile {
             return 0;
         }
     }
+
+    public static int isFileEmpty(File file) {
+        if (file.length()==0) {
+            System.out.println("File is empty!!");
+            return 1;
+        }
+        else {
+            System.out.println("File is not empty");
+            return 0;
+        }
+    }
+
+
     public static void fileip() throws IOException{
         File file = new File("src/main/java/urinals.dat");
 
