@@ -1,3 +1,6 @@
+/*@author : Manasi Anantpurkar
+*/
+
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -16,7 +19,7 @@ public class CreateFile {
         int m=x.length();
         String temp= "rule" ;
         if(m<4){
-            if(x.substring(0,m) != temp.substring(0,m)){
+            if(x.substring(0,m).equals(temp.substring(0,m))){
                 return 1;
             }
             else{
@@ -24,7 +27,7 @@ public class CreateFile {
             }
         }
         else{
-            if(x.substring(0,4)!= temp){
+            if(x.substring(0,4).equals(temp)){
                 return 1;
             }
             else{
